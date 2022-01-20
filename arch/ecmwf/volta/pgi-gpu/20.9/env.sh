@@ -21,18 +21,18 @@ module_unload() {
 }
 
 # Unload to be certain
-module_unload boost
-module_unload cmake
-module_unload intel
-module_unload pgi
-module_unload gnu
+#module_unload boost
+#module_unload cmake
+#module_unload intel
+#module_unload pgi
+#module_unload gnu
 
 # Load modules
-module use /opt/nvidia/hpc_sdk/modulefiles
+#module use /opt/nvidia/hpc_sdk/modulefiles
 # module load nvhpc
-module load nvhpc-nompi/20.9
-module_load boost/1.61.0
-module_load cmake/3.19.5
+#module load nvhpc-nompi/20.9
+#module_load boost/1.61.0
+#module_load cmake/3.19.5
 
 set -x
 
