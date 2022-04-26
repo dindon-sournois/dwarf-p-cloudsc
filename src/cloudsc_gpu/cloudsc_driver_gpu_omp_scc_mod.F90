@@ -163,7 +163,7 @@ CONTAINS
        IBL=(JKGLO-1)/NPROMA+1
        ICEND=MIN(NPROMA,NGPTOT-JKGLO+1)
 
-!$omp parallel do
+!$omp parallel do num_threads(128)
 
       DO JL=1, ICEND
 
