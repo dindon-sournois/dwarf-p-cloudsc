@@ -105,8 +105,8 @@ if( HAVE_CLOUDSC_GPU_SCC )
         TARGET dwarf-cloudsc-gpu-omp-scc
         SOURCES
             dwarf_cloudsc_gpu.F90
-            cloudsc_driver_gpu_omp_scc_mod.F90
-            cloudsc_gpu_omp_scc_mod.F90
+            cloudsc_driver_gpu_omp_scc_hoist_mod.F90
+            cloudsc_gpu_omp_scc_hoist_mod.F90
         DEFINITIONS ${CLOUDSC_DEFINITIONS} CLOUDSC_GPU_SCC CLOUDSC_GPU_OMP_SCC
     )
     if( HAVE_OMP AND TARGET OpenMP::OpenMP_Fortran )
